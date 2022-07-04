@@ -15,17 +15,6 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">MyTracket Expense</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Add Transaction" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit">Add Transaction</button>
-            </form>
-
-          </div>
         </div>
       </nav>
 
@@ -34,7 +23,10 @@
           <input type="text" id="transaction" placeholder="add name"/>
           <input type="number" id="amount" placeholder="Amount"/>
         </div>
-        <div class="button"></div>
+        <div class="button">
+          <button class="expense" onclick="addExpense()">- Expense</button>
+          <button class="income" onclick="addIncome()">+ Income</button>
+        </div>
       </div>
       <div>
         <button class="clear" onclick="clearTableData()">
