@@ -18,5 +18,25 @@ function isValid (value) {
 
 //ADD FUNCTION EXPENSE
 function addExpense() {
-    
+
+    if  (isValid(amount) && isValid(AddtransactionName)) {
+        DataTable.push({
+        list: DataTable.length -1,
+        transaction: AddtransactionName,
+        type: 'Expense',
+        amount,    
+        });
+    }
+}
+
+function addIncome() {
+
+    if  (isValid(amount) && isValid(AddtransactionName)) {
+        DataTable.push({
+        list: DataTable.length -1,
+        transaction: AddtransactionName,
+        type: 'Income',
+        amount,    
+        });
+    }
 }
