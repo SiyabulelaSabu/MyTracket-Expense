@@ -84,3 +84,12 @@ button:hover {
 .totalIncome {
     color: green;
 }
+
+.clear {
+    background-color: aliceblue;
+    color: blue;
+    float: right;
+    border: solid 1px blue;
+    width: 40%;
+    height: 20%;
+}
