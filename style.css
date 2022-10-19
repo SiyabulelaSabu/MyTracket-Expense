@@ -66,3 +66,21 @@ button:hover {
     background-color: green;
 }
 
+.display {
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: solid white;
+}
+
+.totalExpense {
+    color: rgba(255, 42, 0, 0.456);
+}
+
+.totalIncome {
+    color: green;
+}
